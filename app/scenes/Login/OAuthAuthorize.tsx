@@ -163,10 +163,10 @@ function Authorize() {
               {t("Required OAuth parameters are missing")}
               <Pre>
                 {missingParams.map((param) => (
-                  <>
+                  <span key={param}>
                     {param}
                     <br />
-                  </>
+                  </span>
                 ))}
               </Pre>
             </Text>
